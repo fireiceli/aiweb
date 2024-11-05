@@ -1,0 +1,14 @@
+# 排除 .gitignore 文件本身
+!.gitignore
+# 忽略Maven编译生成的目录
+target/
+
+# 忽略IDE配置文件
+.idea/
+*.iml
+
+# 忽略Spring Boot的日志文件
+*.log
+
+# 忽略其他不需要版本控制的文件
+*.class

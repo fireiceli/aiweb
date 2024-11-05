@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: aiweb
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/myproject
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+    database: 0
+    connect-timeout: 10s
+    lettuce:
+      pool:
+        # 链接池中最小的空闲链接 默认为0
+        min-idle: 0
+        # 链接池中最大的空闲连接 默认为 8
+        max-idle: 8
+        #连接池中最大数据库链接数 默认为8
+        max-active: 8
+        #连接池最大阻塞等待时间 负值表示没有限制
+        max-wait: -1ms
+
+
+kimi:
+  api:
+    key: sk-mxICgRjQbMKgkFInIlAKbSgZWeviqKVFySUMeYYlLZEq2R48
+    url: https://api.moonshot.cn/v1/chat/completions
+
+mybatis:
+  configuration:
+    mapUnderscoreToCamelCase: true
